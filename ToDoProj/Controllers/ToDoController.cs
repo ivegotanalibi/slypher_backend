@@ -69,8 +69,8 @@ namespace ToDoProj.Controllers
             _context.SaveChanges();
             return NoContent();
         }
-
-        // DELETE: api/Todos/5
+             
+        // DELETE: api/Todos/5        
         [HttpDelete("{id}")]
         public ActionResult<ToDo> Delete(int id)
         {
