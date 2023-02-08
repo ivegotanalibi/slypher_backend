@@ -18,7 +18,7 @@ namespace ToDoProj.Controllers
             {
                 // Create a new Todo if collection is empty,
                 // which means you can't delete all Todos.
-                _context.Todos.Add(new ToDo { Title = "Item1" });
+                _context.Todos.Add(new ToDo { Title = "Item1" , TaskOwner = "Dummyowner" });
                 _context.SaveChanges();
             }
         }
